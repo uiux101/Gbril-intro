@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;500&family=Noto+Nastaliq+Urdu&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color1: #4c49ff;
+  --main-color2: #3c72ff;
+  --main-color3: #20bdff;
+  --main-color4: #233d8a;
+  --main-color5: #f9f9f9;
+  --main-color6: #e9e7e7;
+  --main-color7: #8c8383;
+  --main-color8: #bbbbbb;
+  --main-gradient1: linear-gradient(90deg, #3c72ff 0%, #20bdff 100%);
+  --main-gradient1-reverse: linear-gradient(90deg, #20bdff 0%, #3c72ff 100%);
+  --main-gradient2: linear-gradient(90deg, #61baff 0%, #1abddd 90.1%);
+  --main-gradient3: linear-gradient(90deg, #ffcf8b80 1.1%, #ffcf8b 81.3%);
+  --main-gradient4: linear-gradient(360deg, #fad0c4 0%, #ffd1ff 100%);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  direction: rtl;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+h1 {
+  font-size: clamp(40px, 7vw, 7rem);
+}
+h2 {
+  font-size: clamp(30px, 4vw, 4rem);
+}
+
+img,
+video {
+  max-width: 100%;
+  width: 100%;
+}
+section {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+select,
+label {
+  cursor: pointer;
+}
+
+/*************************************************** cursors ****************************************************/
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/*************************************************** scrollbar ****************************************************/
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color5);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color6);
+}
+
+/**************************************************** fonts ****************************************************/
+
+.f-800 {
+  font-weight: 800 !important;
+}
+.f-700 {
+  font-weight: 700 !important;
+}
+.f-600 {
+  font-weight: 600 !important;
+}
+.f-500 {
+  font-weight: 500 !important;
+}
+.f-400 {
+  font-weight: 400 !important;
+}
+.lh-25 {
+  line-height: 25px;
+}
+.lh-20 {
+  line-height: 20px;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-grow-0 {
+  flex-grow: 0;
+}
+.f-12 {
+  font-size: 12px !important;
+}
+.f-14 {
+  font-size: 14px !important;
+}
+.f-16 {
+  font-size: 16px !important ;
+}
+.f-18 {
+  font-size: 18px !important;
+}
+.f-20 {
+  font-size: 20px !important;
+}
+.f-22 {
+  font-size: 22px !important;
+}
+.f-24 {
+  font-size: 24px !important;
+}
+.f-30 {
+  font-size: 30px !important;
+}
+
+/**************************************************** flexbox ****************************************************/
+
+.flex-basis10 {
+  flex-basis: 10%;
+}
+.flex-basis20 {
+  flex-basis: 20%;
+}
+.flex-basis30 {
+  flex-basis: 30%;
+}
+.flex-basis40 {
+  flex-basis: 40%;
+}
+.flex-basis50 {
+  flex-basis: 50%;
+}
+.flex-basis60 {
+  flex-basis: 60%;
+}
+.flex-basis70 {
+  flex-basis: 70%;
+}
+.flex-basis75 {
+  flex-basis: 75%;
+}
+.flex-basis80 {
+  flex-basis: 80%;
+}
+.flex-basis90 {
+  flex-basis: 90%;
+}
+.flex-basis100 {
+  flex-basis: 100%;
+}
+
+.min-height-30 {
+  min-height: 30vh;
+}
+.min-height-50 {
+  min-height: 50vh;
+}
+.min-height-100 {
+  min-height: 100vh;
+}
+
+/**************************************************** z-index ****************************************************/
+
+.z-1 {
+  z-index: 1 !important;
+}
+.z-2 {
+  z-index: 2 !important;
+}
+.z-3 {
+  z-index: 3 !important;
+}
+.z-4 {
+  z-index: 4 !important;
+}
+.z-5 {
+  z-index: 5 !important;
+}
+.z-10 {
+  z-index: 10 !important;
+}
+.z-50 {
+  z-index: 50 !important;
+}
+.z-100 {
+  z-index: 100 !important;
+}
+
+/**************************************************** background & colors ****************************************************/
+
+.color-white {
+  color: #ffffff !important;
+}
+.color-black {
+  color: black !important;
+}
+.bg-red {
+  background: #ff0000 !important;
+}
+.bg-red2 {
+  background: #ff3737 !important;
+}
+.bg-red3 {
+  background: #ff5b5b !important;
+}
+.bg-black {
+  background: black !important;
+}
+.bg-black2 {
+  background: #2b2a2a !important;
+}
+.bg-black3 {
+  background: #474747 !important;
+}
+.bg-yellow {
+  background: #7fff00 !important;
+}
+.bg-yellow2 {
+  background: #aafd56 !important;
+}
+.bg-yellow3 {
+  background: #b7ff6f !important;
+}
+.bg-blu1 {
+  background: #002fff !important;
+}
+.bg-blu2 {
+  background: #0f3bff !important;
+}
+.bg-blu3 {
+  background: #1d46fd !important;
+}
+.bg-white1 {
+  background: white !important;
+}
+.bg-white2 {
+  background: #e0e0e0 !important;
+}
+.bg-white3 {
+  background: #c4c4c4 !important;
+}
+.bg-gradient-blue {
+  background: linear-gradient(90deg, #1645bf 0%, #20bdff 100%) !important;
+}
+.bg-lightgrey {
+  background: #f7f7f7 !important;
+}
+.bg-main-color2 {
+  background: #3c72ff !important;
+}
+.bg-main-color1 {
+  background: #4c49ff !important;
+}
+.bg-gradient-lightblue {
+  background-image: linear-gradient(90deg, #61baff 0%, #1abddd 90.1%) !important;
+}
+.bg-gradient-green {
+  background-image: linear-gradient(90deg, #ffcf8b80 1.1%, #ffcf8b 81.3%) !important;
+}
+.bg-gradient-spring {
+  background-image: linear-gradient(360deg, #fad0c4 0%, #ffd1ff 100%) !important ;
+}
+
+/**************************************************** margin & padding ****************************************************/
+
+.margin-tb-50 {
+  margin: 50px 0;
+}
+.margin-tb-80 {
+  margin: 80px 0;
+}
+.margin-tb-100 {
+  margin: 100px 0;
+}
+.margin-tb-120 {
+  margin: 120px 0;
+}
+
+.margin-b-50 {
+  margin-bottom: 50px;
+}
+.margin-b-80 {
+  margin-bottom: 80px;
+}
+.margin-b-100 {
+  margin-bottom: 100px;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #535353, #000000);
+}
+.intro .container-fluid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.moon {
+  max-width: 200px;
+  left: 50px;
+  opacity: 0.7;
+}
+.cloud-1 {
+  max-width: 400px;
+}
+.cloud-2 {
+  max-width: 500px;
+  z-index: 2;
+}
+.cloud-3 {
+  max-width: 200px;
+  z-index: 2;
+}
+.mount-1 {
+  bottom: -40%;
+  bottom: clamp(-20vw,-40%,-50vw);
+  z-index: 1;
+  min-width: 800px;
+  left: 0;
+}
+
+.title {
+  color: #e4e2e2;
+  font-size: clamp(50px, 9vw, 170px);
+  font-family: "Noto Nastaliq Urdu", serif;
+  margin-top: -210px;
+  position: relative;
+}
+
+.title:before {
+  content: "برعاية دكتور فهد ";
+  position: absolute;
+  top: 0;
+  right: 25%;
+  color: #e4e2e2;
+  font-size: 14px;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+.desc {
+  font-size: 16px;
+  line-height: 1.6rem;
+}
+.star {
+  position: absolute;
+  width: 0.5px;
+  border-radius: 100%;
+  filter: blur(1px);
+  aspect-ratio: 1/1;
+  background: white;
+  box-shadow: 0 0 0.5px 0.5px white;
+  opacity: 1;
+}
+
+.fahd {
+  position: absolute;
+  max-width: 150px;
+  left: 50px;
+  bottom: 50px;
+  z-index: 2;
+}
