@@ -150,7 +150,8 @@ label {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(135deg, #535353, #000000);
+  background: rgb(84,84,84);
+  background: linear-gradient(180deg, rgb(43, 43, 43) 0%, rgba(0,0,0,1) 70%);
 }
 .intro .container-fluid {
   height: 100%;
@@ -162,8 +163,19 @@ label {
   max-width: 100px;
   top: 30px;
   left: 50px;
-  opacity: 0.7;
+  
+  /* transition: .5s ease-in-out; */
+  animation: moonlight 2s ease-in-out alternate infinite;
 }
+
+@keyframes moonlight {
+  0%{filter: drop-shadow(0 0 15px #fff);}
+  50%{filter: drop-shadow(0 0 20px #fff);}
+  100%{filter: drop-shadow(0 0 25px #fff);}
+}
+
+
+
 .intro .cloud-1 {
   max-width: 400px;
   top: 5%;
@@ -186,7 +198,7 @@ label {
   z-index: 1;
   min-width: 1700px;
   max-width: 1700px;
-  left: 0;
+  right: 0;
 }
 
 .intro .title {
@@ -256,6 +268,7 @@ label {
   z-index: 10;
 }
 
+
 .intro .redirect-btn {
   position: absolute;
   z-index: 10;
@@ -299,6 +312,7 @@ label {
   }
   .intro .mount-1 {
     left: -150px;
+    right: unset;
     bottom: -50vw;
   }
   .intro .fahd {
@@ -325,3 +339,5 @@ label {
     margin-top: -200px;
   }
 }
+
+
